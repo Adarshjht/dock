@@ -3,7 +3,7 @@ name: Publish Docker Image
 on:
   push:
     branches:
-      - master  # Adjust branch name as needed
+      - main  # Adjust branch name as needed
 
 jobs:
   publish:
