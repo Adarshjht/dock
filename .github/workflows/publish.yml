@@ -26,4 +26,3 @@ jobs:
 
       - name: Push Docker Image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/sso:v1
-        # Push the correctly tagged image to Docker Hub
