@@ -22,8 +22,8 @@ jobs:
 
       - name: Build and Tag Docker Image
         run: |
-          docker build . -t ${{ secrets.DOCKER_USERNAME }}/sso:v1
+          docker build . -t ${{ secrets.DOCKER_USERNAME }}/shoapp:v1
           # Ensure the image is tagged with your Docker Hub username and repository name
 
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/sso:v1
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/shoapp:v1
